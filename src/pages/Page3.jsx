@@ -44,7 +44,7 @@ const cardData = [
   },
 ];
 
-const PricingCard = () => {
+const Page3 = () => {
   return (
 
     <div className="heading">
@@ -94,4 +94,4 @@ const PricingCard = () => {
   );
 };
 
-export default PricingCard;
+export default Page3;
