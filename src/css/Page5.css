@@ -1,10 +1,12 @@
+/* General Styles */
 .testimonials-container {
     background-color: black;
     color: white;
     padding: 40px;
     text-align: center;
 }
-.testimonials-container p{
+
+.testimonials-container p {
     margin-top: 10px;
     text-transform: capitalize;
 }
@@ -26,7 +28,7 @@ h2 {
 .trusted-logos img {
     height: 50px;
     background: #fff;
-    padding: 10px 30px ;
+    padding: 10px 30px;
     border-radius: 5px;
 }
 
@@ -36,16 +38,19 @@ h2 {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 50px; /* Increased top margin to move testimonials down */
 }
 
 .testimonial {
     border: 1px solid white;
     border-radius: 8px;
-    padding: 40px;
+    padding: 20px; /* Reduced padding to control box height */
     text-align: start;
     width: 300px;
     background-color: #111;
+    height: auto; /* Make sure the height is not fixed, and adjusts with content */
+    min-height: 250px; /* Set a minimum height to keep box consistent */
+    box-sizing: border-box; /* Ensure padding doesn't increase the box size */
 }
 
 .testimonial-author {
@@ -61,4 +66,95 @@ h2 {
     height: 40px;
     background-color: white;
     margin-right: 10px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    /* Adjust text size */
+    h2 {
+        font-size: 5vw;
+    }
+
+    /* Adjust logos */
+    .trusted-logos {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .trusted-logos img {
+        height: 40px;
+        padding: 10px 20px;
+        display: none;
+    }
+
+    .testimonials-container p {
+        margin-top: 20px; /* Reduced to maintain proper spacing */
+    }
+
+    /* Adjust testimonials layout */
+    .testimonial-wrapper {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 50px; /* Increased top margin for mobile */
+    }
+
+    .testimonial {
+        width: 90%;
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+
+    .testimonial-author .author-image {
+        width: 30px;
+        height: 30px;
+    }
+
+    .testimonial-author h4 {
+        font-size: 14px;
+    }
+
+    .testimonial-author p {
+        font-size: 12px;
+    }
+}
+
+/* Mobile-first adjustments for very small screens */
+@media (max-width: 480px) {
+    .testimonials-container {
+        padding: 20px;
+    }
+    
+
+    h2 {
+        font-size: 6vw;
+        display: none;
+    }
+
+    .trusted-logos {
+        gap: 10px;
+    }
+
+    .testimonial-wrapper {
+        gap: 10px;
+        margin-top: 40px; /* Increased top margin for very small screens */
+    }
+
+    .testimonial {
+        width: 100%;
+        padding: 15px;
+        min-height: 200px; /* Set a minimum height to control the box size */
+    }
+
+    .testimonial-author .author-image {
+        width: 25px;
+        height: 25px;
+    }
+
+    .testimonial-author h4 {
+        font-size: 12px;
+    }
+
+    .testimonial-author p {
+        font-size: 10px;
+    }
 }

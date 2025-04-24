@@ -17,27 +17,24 @@ const features = [
 const Page4 = () => {
     return (
         <div className='full-screen'>
+            <div className="container">
+                <h1>Why Us</h1>
+                <h2>What Every 9 Hosting Service Includes</h2>
+                <p>
+                    Your infrastructure is your business lifeline — and we treat it that way.
+                    Every service we offer comes with essential features to keep you connected,
+                    secure and supported, 24/7.
+                </p>
 
-      
-        
-        <div className="container">
-            <h1>Why Us</h1>
-            <h2>What Every 9 Hosting Service Includes</h2>
-            <p>
-                Your infrastructure is your business lifeline — and we treat it that way.
-                Every service we offer comes with essential features to keep you connected,
-                secure and supported, 24/7.
-            </p>
-
-            <div className="circle-container">
-                {features.map((feature, index) => (
-                    <div className="circle-item" key={index}>
-                        <div className="circle">{feature.icon1}</div>
-                        <p className="circle-label">{feature.title}</p>
-                    </div>
-                ))}
+                <div className="circle-container">
+                    {features.map((feature, index) => (
+                        <div className="circle-item" key={index}>
+                            <div className="circle">{feature.icon1}</div>
+                            <p className="circle-label">{feature.title}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
-        </div>
         </div>
     );
 };
