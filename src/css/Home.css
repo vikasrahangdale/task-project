@@ -1,0 +1,92 @@
+/* Home.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  html,body{
+    height: 100%;
+    width: 100%;
+    
+  }
+.home {
+    padding: 60px 80px;
+    background: linear-gradient(to  bottom, #1d498f,  #000000);
+    color: white;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  /* Text part */
+  .home h1 {
+    font-size: 36px;
+    font-weight: 600;
+    max-width: 600px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: capitalize;
+    margin-left: 50px;
+    font-size: 4vw;
+  }
+  
+  .home p {
+    margin: 20px 0;
+    font-size: 16px;
+    max-width: 600px;
+    color: #fff;
+    line-height: 1.6;
+    margin-left: 50px;
+
+
+  }
+  
+  /* Button */
+  .home button {
+    padding: 12px 24px;
+    background-color: #145dbf;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 50px;
+    text-transform: capitalize;
+    font-size: 18px;
+  }
+  
+  .home button:hover {
+    background-color: #22c55e;
+  }
+  
+  /* Image container */
+  .left1 img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 850px;
+    margin-top: -439px;
+
+
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .home {
+      flex-direction: column;
+      padding: 30px;
+      text-align: center;
+    }
+  
+    .home h1, .home p {
+      max-width: 100%;
+    }
+  
+    .left1 img {
+      margin-top: 20px;
+    }
+  }
+  
