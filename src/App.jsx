@@ -7,7 +7,6 @@ import Page3 from './pages/Page3.jsx'   // Adding .jsx extension
 import Page4 from './pages/Page4.jsx'   // Adding .jsx extension
 import Page5 from './pages/Page5.jsx'   // If this is also a JSX file
 import Page6 from './pages/Page6.jsx'   // If this is also a JSX file
-import Page7 from './pages/Page7.jsx'   // Adding .jsx extension
 
 const App = () => {
   return (
